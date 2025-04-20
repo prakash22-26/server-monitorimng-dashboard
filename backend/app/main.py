@@ -13,8 +13,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-# Include your API router
 app.include_router(monitor.router)
 
 app.include_router(ws.router)
