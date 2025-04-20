@@ -6,5 +6,5 @@ A full-stack server monitoring dashboard that provides real-time metrics such as
 📸 Screenshots
 Dashboard View
 
-![Alt text](https://drive.google.com/file/d/1uaq77JZ27wAr1udt8mpPmiczwB-vsGHR/view?usp=sharing)
+![Alt text]https://drive.google.com/file/d/1uaq77JZ27wAr1udt8mpPmiczwB-vsGHR/view?usp=sharing
 
