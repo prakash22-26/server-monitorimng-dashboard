@@ -28,9 +28,9 @@ async def websocket_endpoint(websocket: WebSocket):
             app_cpu = get_app_cpu_usage("python")
 
             alerts = {
-                "critical": int(cpu > 50 or ram > 50 or disk > 50),
-                "medium": int(25 < cpu <= 25 or 50 < ram <= 25),
-                "low": int(cpu <= 50 and ram <= 60)
+                "critical": int(cpu > 85 or ram > 85 or disk > 85),
+                "medium": int((60 < cpu <= 85) or (60 < ram <= 85) or (60 < disk <= 85)),
+                "low": int(cpu <= 60 and ram <= 60 and disk <= 60)
             }
 
             data = {
@@ -39,7 +39,7 @@ async def websocket_endpoint(websocket: WebSocket):
                     {"name": "CPU", "value": cpu},
                     {"name": "RAM", "value": ram},
                     {"name": "Disk", "value": disk},
-                    {"name": "App", "value": (app_cpu, 2)}
+                    {"name": "App", "value": round(app_cpu, 2)}
                 ],
                 "networkTraffic": {
                     "time": datetime.now().strftime("%H:%M:%S"),
