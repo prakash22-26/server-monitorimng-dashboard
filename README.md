@@ -5,6 +5,6 @@ A full-stack server monitoring dashboard that provides real-time metrics such as
 
 📸 Screenshots
 Dashboard View
-![Uploading ChatGPT Image Apr 20, 2025, 06_34_43 PM.png…]()
 
+![Alt text](https://drive.google.com/file/d/1uaq77JZ27wAr1udt8mpPmiczwB-vsGHR/view?usp=sharing)
 
