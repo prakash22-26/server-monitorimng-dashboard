@@ -20,7 +20,7 @@ export default function ServerMonitoringDashboard() {
 
   useEffect(() => {
     const socket = new WebSocket(
-      "ws://https://server-monitorimng-dashboard-1.onrender.com/ws/updates"
+      "https://server-monitorimng-dashboard-1.onrender.com/ws/updates"
     );
 
     socket.onopen = () => {
