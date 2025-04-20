@@ -19,9 +19,7 @@ export default function ServerMonitoringDashboard() {
   const [servers, setServers] = useState([]);
 
   useEffect(() => {
-    const socket = new WebSocket(
-      "wss://server-monitorimng-dashboard-1.onrender.com/ws/updates"
-    );
+    const socket = new WebSocket("wss://server-monitorimng-dashboard-1.onrender.com/ws/updates");
 
     socket.onopen = () => {
       console.log("WebSocket connection established");
