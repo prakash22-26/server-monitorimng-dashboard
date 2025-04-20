@@ -7,7 +7,7 @@ class ServerSchema(BaseModel):
     ip_address: str
 
     class Config:
-        from_attributes = True  # replaces orm_mode in Pydantic v2
+        from_attributes = True
 
 
 class UsageSchema(BaseModel):
