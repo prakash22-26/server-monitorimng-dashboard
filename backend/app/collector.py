@@ -12,7 +12,7 @@ def collect_and_store():
         ram = psutil.virtual_memory().percent
         disk = psutil.disk_usage('/').percent
         net_io = psutil.net_io_counters()
-        app_usage = 35  # Placeholder for now
+        app_usage = 35
 
         usage = models.ResourceUsage(
             cpu=cpu,
@@ -28,7 +28,6 @@ def collect_and_store():
         )
         db.add(net)
 
-        # Alert levels could be set based on logic
         alerts = models.AlertLevel(
             critical=2,
             medium=6,
@@ -39,4 +38,4 @@ def collect_and_store():
         db.commit()
         db.close()
 
-        time.sleep(10)  # Collect every 10 seconds
+        time.sleep(10) 
